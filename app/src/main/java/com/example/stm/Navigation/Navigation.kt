@@ -1,4 +1,4 @@
-package com.example.stm
+package com.example.stm.Navigation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -10,7 +10,6 @@ import com.example.stm.Screens.Home
 import com.example.stm.Screens.Login
 import com.example.stm.Screens.SignUp
 import com.example.stm.ViewModels.AuthViewModel
-import com.example.stm.ViewModels.StateViewModel
 
 @Composable
 fun Navigation(modifier: Modifier = Modifier,authViewModel: AuthViewModel){

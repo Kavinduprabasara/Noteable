@@ -1,11 +1,16 @@
 package com.example.stm.Screens
 
+import Navigationbar
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
+import androidx.compose.material3.NavigationBar
+import androidx.compose.material3.NavigationBarDefaults
+import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -38,11 +43,15 @@ fun Home(modifier: Modifier, navController: NavController, authViewModel: AuthVi
         Answer(7, "Charlie", "Description for Charlie"),
         Answer(8, "Charlie", "Description for Charlie")
     )
-    Column (
-        Modifier.fillMaxSize(),
+    Scaffold(
+        bottomBar = {
+            Navigationbar()
+        }
+    ){ innnerPadding->
+        Column (
+        Modifier.fillMaxSize().padding(innnerPadding),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.SpaceAround
-
     ){
         Spacer(modifier = Modifier.height(10.dp))
         Text(
@@ -52,6 +61,6 @@ fun Home(modifier: Modifier, navController: NavController, authViewModel: AuthVi
         SingleChoiceQuestions(
             options
         )
-
+    }
     }
 }

@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.ViewModelProvider
+import com.example.stm.Navigation.Navigation
 import com.example.stm.ViewModels.AuthViewModel
 import com.example.stm.ViewModels.StateViewModel
 

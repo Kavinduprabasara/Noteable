@@ -50,7 +50,7 @@ fun Login(modifier: Modifier,navController:NavController,authViewModel: AuthView
         Button(onClick = {
             navController.navigate(Routes.Home)
             println("$email $password")
-            authViewModel.login(email,password)
+//            authViewModel.login(email,password)
         }) {
             Text(text = "Login")
         }
