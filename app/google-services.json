@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "108712450720",
+    "project_id": "drawing-desk-3db18",
+    "storage_bucket": "drawing-desk-3db18.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108712450720:android:b96ec75326cccc9d7747c5",
+        "android_client_info": {
+          "package_name": "com.example.stm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANfqXWeNVXhfxZ7sAyzbJIxtTms162WxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108712450720:android:1881cf9d53c3c0b57747c5",
+        "android_client_info": {
+          "package_name": "com.gm.twodproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANfqXWeNVXhfxZ7sAyzbJIxtTms162WxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
