@@ -16,8 +16,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun Navigationbar(modifier: Modifier = Modifier) {
-    var activeIndex by remember { mutableStateOf(0) }
+fun Navigationbar(
+    selectedIndex: Int,
+    onItemSelected: (Int) -> Unit,
+    modifier: Modifier = Modifier) {
 
     Row(
         verticalAlignment = Alignment.CenterVertically,
@@ -35,10 +37,10 @@ fun Navigationbar(modifier: Modifier = Modifier) {
             Icon(
                 imageVector = icon,
                 contentDescription = null,
-                tint = if (activeIndex == index) Color.Black else Color.Gray,
+                tint = if (selectedIndex  == index) Color.Black else Color.Gray,
                 modifier = Modifier
                     .padding(horizontal = 32.dp)
-                    .clickable { activeIndex = index }
+                    .clickable { onItemSelected(index) }
             )
         }
     }
